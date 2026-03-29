@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: chirag-computers
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn app:app"
